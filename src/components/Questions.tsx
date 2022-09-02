@@ -73,7 +73,7 @@ const Questions = () => {
             {request.length > 0 && request.map((item,idx) => (
           <div key={idx} className='body-request'>
              <div className='main-request-top'>
-              <h5>DTM</h5>
+              <h5>Siz</h5>
               <p>{date}</p>
              </div>
              <div className='main-request-bottom'>
