@@ -7,14 +7,6 @@ interface IProps {
   value : any
 }
 
-// interface IState  {
-//    drops: {
-//       id : number
-//       title : string
-//       path : string
-//       cName : string
-//    }[]
-// }
 
 const NavbarBottom : React.FC<IProps>= ({value}) => {
 
@@ -48,9 +40,7 @@ const NavbarBottom : React.FC<IProps>= ({value}) => {
           if(item.title === "Markaz haqida" ){
             return(
               <li key={item.id}
-              className={item.cName}
-              onMouseEnter={() => setDropdown(true)}
-              onMouseLeave={() => setDropdown(false)}>
+              className={item.cName}>
               <Link 
               to={item.path}
               className="navNavigation"

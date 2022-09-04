@@ -37,7 +37,7 @@ const Animation = () => {
     </div>
     <div className='component'>
     <News type = "news" heading=''/>
-    {/* <Content /> */}
+    <Content />
     <News type = "books" heading='Namunaviy test topshiriqlari'/>
     <Region/>
     <Invitation/>
