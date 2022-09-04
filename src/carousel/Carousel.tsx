@@ -21,7 +21,7 @@ const Carousel = () => {
         <div className="carousel-items">
           <div className="carousel-left">
             <img src={item.img} 
-            alt="banner" width={300} height={330} />
+            alt="banner" width={300} height={330} className="carousel-img" />
           </div>
           <div className="carousel-right">
             <p>{item.title}</p>

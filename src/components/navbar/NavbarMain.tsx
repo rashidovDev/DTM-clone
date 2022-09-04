@@ -10,7 +10,7 @@ const NavbarMain = () => {
         <div className='container nav-main-items'>
           <div className='nav-main-left'>
             <img src={require("../../assets/navbar/logo.png")}
-             style={{width:"450px"}} />
+         className="nav-main-img" />
           </div>
           <div className='nav-main-right'>
             <div>

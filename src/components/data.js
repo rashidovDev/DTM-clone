@@ -425,7 +425,7 @@ export const cooperation = [
     },
     {
         img: two,
-        title: "Yagona interkativ davlat xizmatlari portali",
+        title: "Yagona interaktiv davlat xizmatlari portali",
         sort: "continent"
     },
     {

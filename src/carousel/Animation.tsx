@@ -2,6 +2,7 @@ import React from 'react'
 import News from '../components/component/News'
 import "./Animation.css"
 import "../components/component/component.scss"
+import "../components/component/responsive.scss"
 import Carousel from './Carousel'
 import Content from "../components/component/Content"
 import Region from '../components/component/Region'
@@ -36,7 +37,7 @@ const Animation = () => {
     </div>
     <div className='component'>
     <News type = "news" heading=''/>
-    <Content />
+    {/* <Content /> */}
     <News type = "books" heading='Namunaviy test topshiriqlari'/>
     <Region/>
     <Invitation/>

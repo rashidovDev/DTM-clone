@@ -9,7 +9,6 @@ interface IState {
   content : Props["content"]
 }
 
-
 const Content = () => {
 
   const [content, setContent] = useState<IState["content"]>([])
@@ -62,7 +61,7 @@ const Content = () => {
           :
           filter.map((item,idx) => (
             <div key={idx} className='content-item'>
-              <img src={item.image} alt="content" style={{ width: "100%", height: "250px" }} />
+              <img src={item.image} className="content-img" alt="content" style={{ width: "100%", height: "250px" }} />
               <div className='content-information'>
                 <p className='content-heading'>{item.heading}</p>
                 <p className='content-more'>{item.title}</p>

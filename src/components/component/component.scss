@@ -17,6 +17,10 @@ $globalFontColor : #3C495A;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
     align-items: center;
 }
+.news-heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
 .news-item{
     text-align: center;
     padding:15px 50px;
@@ -30,7 +34,6 @@ $globalFontColor : #3C495A;
 .news-img{
      text-align: center;
 }
-
 //Content
 .content-button{
     margin-top: 50px;
@@ -327,7 +330,7 @@ $globalFontColor : #3C495A;
             font-weight: 700;
         }
            .email-btn{
-            width: 400px;
+            width: 320px;
             height: 30px;
             border: none;
             border-radius: 10px;
@@ -375,3 +378,28 @@ $globalFontColor : #3C495A;
         }
     }
 }
+
+@media (max-width : 400px) {
+    .btn-items{
+         display: flex;
+        .btn-right{
+         display: flex;
+         flex-direction: column;
+        }
+        .btnAll{
+            
+        }
+    }
+    .content{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        .content-item{
+            width: 300px;
+            .content-img{
+                height: 200px;
+            }
+        }
+    }
+}
+

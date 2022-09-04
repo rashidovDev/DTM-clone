@@ -1,0 +1,82 @@
+//Region 
+@media (max-width : 400px){
+
+    .region{
+        .region-heading{
+            font-size: 20px;
+            text-align: center;
+            padding-left: 50px;
+        }
+        .region-main{
+            display: flex;
+            flex-direction: column;
+                .region-left{
+                    .region-left-img{
+                       width: 350px;
+                       height: 250px;
+                    }
+                }
+                .region-center{
+                    width: 350px;
+                    height: 350px;
+                    margin: 10px 0;
+                    .city{
+                        font-size: 20px;
+                    }
+                }
+                .region-right{
+                    width: 350px;
+                    height: 370px;  
+                }
+        }
+    }
+    
+    //Invitation
+    .invitation{
+        .main{
+            padding: 10px;
+            .main-top{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    
+    //cooperation
+    .cooperation{
+        padding: 10px 10px;
+        .main{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+            .main-item{
+                width: 130px;
+            }
+        }
+    }
+    .social-main{
+        .social-top{
+            .top-items{
+                display: flex;
+                flex-direction: column;
+                .top-item{
+                    margin: 10px 0;
+                    .link-item{
+                        border-right: none;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .social-bottom{
+        justify-content: left;
+        display: flex;
+        flex-direction: column;
+        .social-right{
+            .email-btn{
+                width: 70%;
+            }
+        }
+    }
+}

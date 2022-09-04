@@ -123,3 +123,12 @@
     }
 
 }
+
+@media (max-width : 400px) {
+    .context{
+        top: 550px;
+    }
+    .area{
+        height: 570px;
+    }
+}

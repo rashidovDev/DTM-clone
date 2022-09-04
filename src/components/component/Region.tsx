@@ -6,11 +6,10 @@ const Region = () => {
     <div className='container region'>
         <div className='region-heading'>
             <p>Hududiy bo'limlar</p>
-            <p>Hududlar statistikasi</p>
         </div>
         <div className='region-main'>
             <div className='region-left'>
-              <img src={require("../../assets/uzmap.jpg")} alt="map" width={450} height={350}/>
+              <img className='region-left-img' src={require("../../assets/uzmap.jpg")} alt="map" width={450} height={350}/>
             </div>
             {address.map((item,idx) => (
             <div key={idx} className='region-center'>

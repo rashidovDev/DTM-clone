@@ -16,11 +16,21 @@ const News : React.FC<INews["title"]> = ({type,heading}) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    pauseOnHover: true
+    pauseOnHover: true,
+
+    responsive: [{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1
+      }
+    }]
   };
   return (
+    <>
+    <h1 className='news-heading'>{heading}</h1>
       <div className='container news-main'>
-        <h1 className='news-heading'>{heading}</h1>
         <Slider {...settings} className="news">
           {carouselItems.map((item, idx) => (
            item.sort === type && (
@@ -32,6 +42,7 @@ const News : React.FC<INews["title"]> = ({type,heading}) => {
           ))}
         </Slider>
       </div>
+    </>
   )
 }
 
