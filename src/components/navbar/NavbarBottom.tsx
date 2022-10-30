@@ -57,7 +57,7 @@ const NavbarBottom : React.FC<IProps>= ({value}) => {
           }
           return (
             <li key={item.id} className={item.cName}>
-            <Link className='navNavigation' to={item.path}>{item.title} </Link>
+            <Link className='navNavigation' to="/">{item.title} </Link>
             </li>
           )        
        })}

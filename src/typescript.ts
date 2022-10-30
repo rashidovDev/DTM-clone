@@ -1,6 +1,6 @@
 export interface IState {
     content: {
-      id: number
+      id: string
       heading: string,
       title: string,
       image: string,
@@ -8,7 +8,7 @@ export interface IState {
       date : string,
     }[]
   }
-
+  
  export interface INews {
     title : {
         type : string

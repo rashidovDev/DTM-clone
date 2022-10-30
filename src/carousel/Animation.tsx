@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import News from '../components/component/News'
 import "./Animation.css"
 import "../components/component/component.scss"
@@ -9,10 +9,16 @@ import Region from '../components/component/Region'
 import Invitation from '../components/component/Invitation'
 import Cooperation from '../components/component/Cooperation'
 import Social from '../components/component/Social'
+import {IState as Props} from "../typescript"
 
-
+interface IState {
+  content : Props["content"]
+}
 
 const Animation = () => {
+
+  const [data, setData] = useState<IState["content"]>()
+
   return (
     <>
     <div>
@@ -37,7 +43,7 @@ const Animation = () => {
     </div>
     <div className='component'>
     <News type = "news" heading=''/>
-    <Content />
+    <Content/>
     <News type = "books" heading='Namunaviy test topshiriqlari'/>
     <Region/>
     <Invitation/>

@@ -124,7 +124,7 @@
 
 }
 
-@media (max-width : 400px) {
+@media (max-width : 700px) {
     .context{
         top: 550px;
     }

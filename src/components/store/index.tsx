@@ -1,8 +1,12 @@
 import {configureStore} from "@reduxjs/toolkit"
+import ModalSlice from "./slices/ModalSlice";
 import QuestionSlice from "./slices/QuestionSlices";
 
 const store = configureStore({
-    reducer : {question : QuestionSlice}
+    reducer : {
+        question : QuestionSlice,
+        news : ModalSlice
+    }
 })
 
 export default store;

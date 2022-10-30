@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { firestore as db } from '../../firebase/config';
-import RssFeedIcon from '@mui/icons-material/RssFeed';
 import { contentButton } from '../data';
 import {IState as Props} from "../../typescript"
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { modalAction } from '../store/slices/ModalSlice';
 
 interface IState {
   content : Props["content"]
 }
 
-const Content = () => {
+const Content : React.FC = () => {
 
   const [content, setContent] = useState<IState["content"]>([])
   const [filter, setFilter] = useState<IState["content"]>([])
@@ -31,6 +33,13 @@ const Content = () => {
     setFilter(updateList);
   }
 
+  const dispatch = useDispatch()
+
+  const openToggle = () => {
+    dispatch(modalAction.toggle())
+  }
+
+
   return (
     <>
       <div className='container'>
@@ -51,7 +60,7 @@ const Content = () => {
             } 
             </div>
             <div className='btn-left'>
-              <button className='btnAll'>Barchasi</button>
+              <Link className='btnAll'to="/allnews">Barchasi</Link>
             </div>
           </div>
 
@@ -67,7 +76,11 @@ const Content = () => {
                 <p className='content-more'>{item.title}</p>
                 </div>
                 <div className='content-bottom'>
-                  <button className='content-btn'>Batafsil</button>
+                  <Link 
+                  className='content-btn'
+                  to={`/contentone/${item.id}`}
+                  onClick={openToggle}
+                  >Batafsil</Link>
                   <p className='content-date'><span><CalendarMonthIcon /></span><span>{item.date}</span></p>
                 </div>
               
